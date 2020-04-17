@@ -40,4 +40,4 @@ client.on('message', (msg) => {
 });
 ```
 
-### If you want help with your code or just want to chat with people on a Minecraft server without an account you can click [here](https://discord.gg/H8VzY7e)
+### If you want help with your code or just want to chat with people on a Minecraft server without an account you can click [here](https://discord.gg/H8VzY7e).
