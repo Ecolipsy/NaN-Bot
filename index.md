@@ -1,37 +1,43 @@
-## Welcome to GitHub Pages
+# Welcome to NaN-Bot!
 
-You can use the [editor on GitHub](https://github.com/Ecolipsy/NaN-Bot/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+This is the homepage of NaN-Bot. You will find tutorials on Mineflayer and Discord.js here.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Mineflayer tutorial:
+```js
+const mineflayer = require('mineflayer');
+const bot = mineflayer.createBot({
+  host: "your.server.ip"
+  port: "25565" //Not required if port is 25565
+  username: /*If server is not cracked use email*/ "TestMineflayerBot"
+  password: "MyStrongPassword123" //Not required if server is cracked
+});
 
-### Markdown
+bot.on('login', () => {
+  bot.chat('I am ready!')
+  console.log('I am ready!')
+});
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+bot.on('message', (user, msg) => {
+  if(msg == '!hi'){
+    bot.chat('Hello, ' + user + '.')
+  }
+});
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Discord.js tutorial:
+```js
+const discord = require('discord.js');
+const client = new dc.Client();
 
-### Jekyll Themes
+client.on('ready', () => {
+  console.log('I am ready!')
+});
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Ecolipsy/NaN-Bot/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+client.on('message', (msg) => {
+  if(msg.content == '!hi'){
+    msg.channel.send('Hello, **' + msg.author.username + '**. :slight_smile:')
+  }
+});
+```
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### If you want help with your code or just want to chat with people on a Minecraft server without an account you can click [here](https://discord.gg/H8VzY7e)
