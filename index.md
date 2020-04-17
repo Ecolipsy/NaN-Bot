@@ -1,6 +1,6 @@
 # Welcome to NaN-Bot!
 
-This is the homepage of NaN-Bot. You will find tutorials on Mineflayer and Discord.js here.
+This is the homepage of NaN-Bot. You will find tutorials on Mineflayer and Discord.js here, and also, this page is not finished yet, so that is the reason for the lack of content.
 
 ## Mineflayer tutorial:
 ```js
