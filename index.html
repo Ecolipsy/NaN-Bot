@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Welcome to NaN-Bot! | NaN-Bot</title>
+<meta name="generator" content="Jekyll v3.8.5">
+<meta property="og:title" content="Welcome to NaN-Bot!">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="NaNBot is a bot that I originally made with GamesAwayHD to make kaboom / JuCeLo’s kaboom clone a better place :p">
+<meta property="og:description" content="NaNBot is a bot that I originally made with GamesAwayHD to make kaboom / JuCeLo’s kaboom clone a better place :p">
+<link rel="canonical" href="https://ecolipsy.github.io/NaN-Bot/">
+<meta property="og:url" content="https://ecolipsy.github.io/NaN-Bot/">
+<meta property="og:site_name" content="NaN-Bot">
+<script type="application/ld+json">
+{"@type":"WebSite","headline":"Welcome to NaN-Bot!","url":"https://ecolipsy.github.io/NaN-Bot/","name":"NaN-Bot","description":"NaNBot is a bot that I originally made with GamesAwayHD to make kaboom / JuCeLo’s kaboom clone a better place :p","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="Filer_for_index/style.css">
+    <script src="Filer_for_index/jquery-3.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
+    <script src="Filer_for_index/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>NaN-Bot</h1>
+        <p>NaNBot is a bot that I originally made with GamesAwayHD to make kaboom / JuCeLo's kaboom clone a better place :p</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/Ecolipsy/NaN-Bot" class="button fork"><strong>View On GitHub</strong></a>
+        
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul><li class="tag-h1 active"><a href="#welcome-to-nan-bot">Welcome to NaN-Bot!</a></li><li class="tag-h2"><a href="#mineflayer-tutorial">Mineflayer tutorial:</a></li><li class="tag-h2"><a href="#discordjs-tutorial">Discord.js tutorial:</a></li><li class="tag-h3"><a href="#if-you-want-help-with-your-code-or-just-want-to-chat-with-people-on-a-minecraft-server-without-an-account-you-can-click-here">If you want help with your code or just want to chat with people on a Minecraft server without an account you can click here.</a></li></ul>
+      </nav>
+      <section style="height: auto;">
+        <h1 id="welcome-to-nan-bot">Welcome to NaN-Bot!</h1>
+
+<p>This is the homepage of NaN-Bot. You will find tutorials on 
+Mineflayer and Discord.js here, and also, this page is not finished yet,
+ so that is the reason for the lack of content.</p>
+
+<h2 id="mineflayer-tutorial">Mineflayer tutorial:</h2>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">mineflayer</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">mineflayer</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">bot</span> <span class="o">=</span> <span class="nx">mineflayer</span><span class="p">.</span><span class="nx">createBot</span><span class="p">({</span>
+  <span class="na">host</span><span class="p">:</span> <span class="dl">"</span><span class="s2">your.server.ip</span><span class="dl">"</span>
+  <span class="na">port</span><span class="p">:</span> <span class="dl">"</span><span class="s2">25565</span><span class="dl">"</span> <span class="c1">//Not required if port is 25565</span>
+  <span class="na">username</span><span class="p">:</span> <span class="cm">/*If server is not cracked use email*/</span> <span class="dl">"</span><span class="s2">TestMineflayerBot</span><span class="dl">"</span>
+  <span class="na">password</span><span class="p">:</span> <span class="dl">"</span><span class="s2">MyStrongPassword123</span><span class="dl">"</span> <span class="c1">//Not required if server is cracked</span>
+<span class="p">});</span>
+
+<span class="nx">bot</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">login</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">bot</span><span class="p">.</span><span class="nx">chat</span><span class="p">(</span><span class="dl">'</span><span class="s1">I am ready!</span><span class="dl">'</span><span class="p">)</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">I am ready!</span><span class="dl">'</span><span class="p">)</span>
+<span class="p">});</span>
+
+<span class="nx">bot</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">message</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">user</span><span class="p">,</span> <span class="nx">msg</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">msg</span> <span class="o">==</span> <span class="dl">'</span><span class="s1">!hi</span><span class="dl">'</span><span class="p">){</span>
+    <span class="nx">bot</span><span class="p">.</span><span class="nx">chat</span><span class="p">(</span><span class="dl">'</span><span class="s1">Hello, </span><span class="dl">'</span> <span class="o">+</span> <span class="nx">user</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">.</span><span class="dl">'</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h2 id="discordjs-tutorial">Discord.js tutorial:</h2>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">discord</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">discord.js</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">dc</span><span class="p">.</span><span class="nx">Client</span><span class="p">();</span>
+
+<span class="nx">client</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">ready</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">I am ready!</span><span class="dl">'</span><span class="p">)</span>
+<span class="p">});</span>
+
+<span class="nx">client</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">message</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">msg</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">msg</span><span class="p">.</span><span class="nx">content</span> <span class="o">==</span> <span class="dl">'</span><span class="s1">!hi</span><span class="dl">'</span><span class="p">){</span>
+    <span class="nx">msg</span><span class="p">.</span><span class="nx">channel</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="dl">'</span><span class="s1">Hello, **</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">msg</span><span class="p">.</span><span class="nx">author</span><span class="p">.</span><span class="nx">username</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">**. :slight_smile:</span><span class="dl">'</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+
+<span class="nx">client</span><span class="p">.</span><span class="nx">login</span><span class="p">(</span><span class="dl">'</span><span class="s1">Token</span><span class="dl">'</span><span class="p">)</span> <span class="c1">//You can get a bot token from "https://discordapp.com/developers/applications".</span>
+
+<span class="cm">/*
+To invite your bot you have to go to "https://discordapp.com/developers/applications".
+Then when you have made an application go to the "Bot" option with a little pussle piece.
+When you have created a bot you can copy the token and paste it in the client.login line.
+Back to inviting your bot, go to the application and hit the "OAuth2" option with a wrench.
+Then check the "Bot" box in scopes and go down to the bot permissions and check the "Administrator" box.
+Then you can copy the link you will be provided with and enter it in any browser to invite your bot.
+*/</span>
+</code></pre></div></div>
+
+<h3 id="if-you-want-help-with-your-code-or-just-want-to-chat-with-people-on-a-minecraft-server-without-an-account-you-can-click-here">If you want help with your code or just want to chat with people on a Minecraft server without an account you can click <a href="https://discord.gg/H8VzY7e">here</a>.</h3>
+
+
+      </section>
+      <footer>
+        
+          <p>Project maintained by <a href="https://github.com/Ecolipsy">Ecolipsy</a></p>
+        
+        <p></p>
+      </footer>
+    </div>
+
+    
+  
+
+</body></html>
