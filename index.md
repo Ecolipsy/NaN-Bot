@@ -16,7 +16,7 @@ bot.on('login', () => {
   bot.chat('Hello, world!')
 });
 
-bot.on('message', (message) => {
+bot.on('chat', (user, message) => {
   if(message == '!ping'){
     bot.chat('Pong!')
   }
